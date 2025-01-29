@@ -3,7 +3,7 @@ module "infrabhi" {
   source = "../modules/infrabhi"
   cloud_env = "dev"
   vpc_tag_name = "dev_vpc"
-  instance_count = "2"
+  instance_count = ["2"]
   instance_type = "t2.micro"
   vpc_cidr = "172.31.0.0/16"
   public_cidrs = ["172.31.3.0/24","172.31.4.0/24"]
